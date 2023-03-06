@@ -1,0 +1,10 @@
+# Emacs Org
+# submission_work/Org # syke, let's not ignore these.
+
+# latex libs
+*.cls
+
+# latex auto generated
+*.tex
+*.xmpi
+*.bbl
