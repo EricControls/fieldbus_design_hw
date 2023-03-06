@@ -1,0 +1,9 @@
+# Emacs Org
+submission_work/Org
+
+# latex libs
+*.cls
+
+# latex auto generated
+*.tex
+*.xmpi
