@@ -7,3 +7,4 @@ submission_work/Org
 # latex auto generated
 *.tex
 *.xmpi
+*.bbl
