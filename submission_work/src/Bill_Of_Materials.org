@@ -51,11 +51,15 @@
 |   8 | Vevor Hydraulic Pump              | ZZCXU0031361544148216       |   1 | Hydraulic power for sheet clamping frame              | [[https://www.ebay.com/itm/124224795300?hash+AD0-item1cec5ff2a4:g:LzcAAOSwVIZfvaiU+ACY-autorefresh+AD0-true][link]]                   | No            |     |
 
 ** list items
-| ID | Sensor       | Model Number | Cnt | Description                   | Link            |
-|----+--------------+--------------+-----+-------------------------------+-----------------|
-|    | ZONE 1       |              |     |                               |                 |
-|  9 | Cell PLC     | CX2030       |   1 | Mid level PLC                 | [[https://www.beckhoff.com/en-us/products/ipc/embedded-pcs/cx20x0-intel-celeron-core-i7/cx2030.html][Beckhoff CX2030]] |
-| 10 | Power Supply | CX2100-0014  |   1 | Power supply for CX20xx, 130W | [[https://www.beckhoff.com/en-us/products/ipc/embedded-pcs/cx20x0-intel-celeron-core-i7/cx2100-0014.html][Beckhoff CX2100]] |
-|    |              |              |     | 8-ch digital input            |                 |
-| 11 | Safety Card  | EL1918       |   1 | TwinSAFE, TwinSAFE Logic      | [[https://www.beckhoff.com/en-us/products/automation/twinsafe/twinsafe-hardware/el1918.html][Beckhoff EL1918]] |
-| 12 |              |              |     |                               |                 |
+| ID | Sensor            | Model Number     | Cnt | Description                   | Link                      |
+|----+-------------------+------------------+-----+-------------------------------+---------------------------|
+|    | ZONE 1            |                  |     |                               |                           |
+|  9 | Cell PLC          | CX2030           |   1 | Mid level PLC                 | [[https://www.beckhoff.com/en-us/products/ipc/embedded-pcs/cx20x0-intel-celeron-core-i7/cx2030.html][Beckhoff CX2030]]           |
+| 10 | Power Supply      | CX2100-0014      |   1 | Power supply for CX20xx, 130W | [[https://www.beckhoff.com/en-us/products/ipc/embedded-pcs/cx20x0-intel-celeron-core-i7/cx2100-0014.html][Beckhoff CX2100]]           |
+|    |                   |                  |     | 8-ch digital input            |                           |
+| 11 | Safety Card       | EL1918           |   1 | TwinSAFE, TwinSAFE Logic      | [[https://www.beckhoff.com/en-us/products/automation/twinsafe/twinsafe-hardware/el1918.html][Beckhoff EL1918]]           |
+| 12 | Ethercat Junction | EK1122-0008      |   1 | 2-port Ethercat Junction M8   | [[https://www.beckhoff.com/en-us/products/i-o/ethercat-terminals/ek1xxx-bk1xx0-ethercat-coupler/ek1122-0008.html][Beckhoff EK1122]]           |
+| 13 | End Cap           | EL9011           |   1 | bus terminal end cap          | [[https://www.beckhoff.com/en-us/products/i-o/ethercat-terminals/el9xxx-system/el9011.html][Beckhoff EL9011]]           |
+| 14 | Ethercat cable    | ZK1090-3232-0xxx |   1 | M8 cable,AWG 26,female-female | [[https://www.beckhoff.com/en-us/products/i-o/accessories/pre-assembled-cables/ethercat-and-fieldbus-cables/zk1090-3232-0xxx.html][Beckhoff ZK1090-3232-0xxx]] |
+|    |                   |                  |     |                               |                           |
+|    | Zone 2            |                  |     |                               |                           |
