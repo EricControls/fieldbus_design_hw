@@ -25,9 +25,10 @@
 #+LATEX_HEADER: \usepackage{tabularx}
 #+ATTR_LATEX: :environment tabularx :placement [h] :center t :width \linewidth
 
+#+LATEX_HEADER: \usepackage{pdflscape}
+
 ** Exporter Settings :ignore:noexport:
 #+EXPORT_FILE_NAME: ../Homework.pdf
-# #+LATEX_HEADER: \renewcommand\make-title{}
 #+OPTIONS: toc:nil num:nil ^init tex:t' H:1 date:nil creator:nil timestamp:nil
 
 #+OPTIONS: author:nil
@@ -133,9 +134,44 @@
 |------+----------------------+-------------------+------+--------------------------------------+----------------------------------------------------------------------------------------+-------------------------------|
 |   37 | Connector            | 557703-05M0       |    4 | M12 Cord Set – 4 Meters              | 4 for Gems pressure switches                                                           | [[https://bh.kempstoncontrols.ae/557703-05M0/GEMS/sku/127852?skipCountryPopup=1][Kempston Ctrls 557703-05M0]]    |
 
-
-
 ** Diagram :ignore:
 
 #+LATEX_HEADER: \usepackage{pdfpages}
 #+LATEX: \includepdf[pages=-,landscape,pagecommand={}]{./Fieldbus_diagram.pdf}
+
+** Explain Design :ignore:
+    #+LATEX: \begin{landscape}
+*** Design Explanation
+
+#+begin_src text
+  The majority of the components are Beckhoff EtherCat products because of many reasons:
+  exceptional performance, flexible topology, it's simple and robust, and integrated safety to
+  name a few.
+
+  The PLC is a mid level performance device with plenty of horse power to power this cell and
+  leave enough room for future upgrades like control kuka's motion (KRC4 and up) for example. The
+  IPC also runs Windows OS so it can handle running software like a traditional office computer,
+  you can run things like SQL databases and/or house all the software required to interface with
+  some of the sensors included in this cell.
+  An EL6070 keeps all licenses off the IPC which makes
+  it easy to replace or swap without transferring or losing license keys.
+
+  Safety is a topic all on its own and without gathering all of the real requirements I had to
+  assume a couple of things, though, I went ahead and included a few safety components. The EL1918
+  stores the safety logic and why not use a card with inputs instead of opting for a card that
+  only handles logic, you can't every have enough IO so I attempt to leave a little extra wherever
+  possible (some customers even spec a percentage of extra IO). I had a few things in mind for
+  this cell like e-stops, robot safety, and high voltage power but it is not an exhausted list of
+  what is required for a solid safety system.
+
+  The EtherCat terminals are made up of input and output channels with a couple of communication
+  terminals that integrate with sensors nicely. Those included are EtherNet/IP for the kuka robot
+  and keyence laser, RS485 for delta VFD, with an extra port for future upgrades. Terminals were
+  chosen with the assumption that din real estate was available in a cabinet, but a nice
+  alternative for terminal type that can handle rough environments EP blocks.
+
+  Accessories include items that were required to make communication with PLC an improvement.
+#+end_src
+
+
+    #+LATEX: \end{landscape}
