@@ -26,7 +26,7 @@
 #+ATTR_LATEX: :environment tabularx :placement [h] :center t :width \linewidth
 
 ** Exporter Settings :ignore:noexport:
-#+EXPORT_FILE_NAME: ../Bill_Of_Materials.pdf
+#+EXPORT_FILE_NAME: ../Homework.pdf
 # #+LATEX_HEADER: \renewcommand\make-title{}
 #+OPTIONS: toc:nil num:nil ^init tex:t' H:1 date:nil creator:nil timestamp:nil
 
@@ -135,7 +135,7 @@
 
 
 
-** Include PDFs :ignore:
+** Diagram :ignore:
 
 #+LATEX_HEADER: \usepackage{pdfpages}
-#+LATEX: \includepdf[pages=-,landscape,pagecommand={}]{../Fieldbus_diagram.pdf}
+#+LATEX: \includepdf[pages=-,landscape,pagecommand={}]{./Fieldbus_diagram.pdf}
